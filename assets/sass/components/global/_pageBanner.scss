@@ -1,0 +1,186 @@
+.PageBanner.FlexContainer {
+  background-size: cover !important;
+  background-position: center center !important;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 850px;
+
+  h1 {
+    font-size: 3.125rem;
+    font-family: 'Oswald', sans-serif;
+    line-height: 3.5rem;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .tint {
+    background: rgba(183,140,45,.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .container {
+    position: relative;
+    max-width: 850px;
+    z-index: 5;
+    padding: 2rem;
+    margin-top: -4.5rem;
+
+    svg {
+      display: block;
+      margin: 0 auto 25px;
+      width: 50px;
+      height: 63px;
+    }
+  }
+
+  .ScrollDownButton {
+    display: none !important;
+
+    svg {
+      cursor: pointer;
+      // @include animation('bounce-in-top 0.9s steps(10, start) infinite both');
+      width: 35px;
+      height: auto;
+      margin-top: 35px;
+
+      circle,
+      path {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    }
+  }
+}
+
+.BannerSubContent {
+  color: #2E2E2E;
+  font-size: 0.875rem;
+  text-align: center;
+  align-items: center;
+
+  &.home {
+    color: #fff;
+  }
+
+  .FlexContainer {
+    flex-direction: column;
+  }
+
+  p:before {
+    display: block;
+    content: '';
+    height: 1px;
+    background: $GoldColor;
+    margin: 2.188rem auto;
+    width: 60%;
+  }
+
+  .container {
+    margin: auto 0;
+    padding: 2rem;
+
+    svg {
+      display: block;
+      margin: 0 auto;
+      width: 60px;
+      height: auto;
+    }
+  }
+}
+
+.PageBannerAlternate.FlexContainer {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  .tint {
+    display: none;
+  }
+
+  h1 {
+    color: $GoldColor;
+    border-bottom: 1px solid $GoldColor;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    color: $DarkGrayColor;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  &:after {
+    display: none;
+    content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTgxNCAxMDA0LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE4MTQgMTAwNC40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMC41LDIwMC44TDE4MTMuNSwwdjEwMDQuNEw4MTUuOCw4OTMuOUwwLjUsODE5LjVWMjAwLjh6Ii8+PC9zdmc+");
+    height: 250px;
+    width: 101%;
+    margin-left: -3px;
+    transform: scaleX(-1);
+    margin-top: 3rem;
+    position: absolute;
+    bottom: -95px;
+    left: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  .PageBanner.home .btn {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .PageBanner {
+    height: 673px;
+  }
+}
+@media screen and (max-width: 925px) {
+  .PageBanner:not(.PageBannerAlternate) h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 875px) {
+  .PageBannerAlternate p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .PageBanner {
+    height: 605px;
+
+    &.home {
+      height: 745px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .PageBanner h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .PageBannerAlternate h1 {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .PageBanner h1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

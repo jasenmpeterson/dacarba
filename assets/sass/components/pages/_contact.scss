@@ -1,0 +1,61 @@
+address {
+  color: $LightGray;
+
+  h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: $GoldColor;
+  }
+  margin-bottom: 3rem;
+}
+
+h1.ContactTitle {
+  font-size: 3.125rem;
+  font-family: 'Oswald', sans-serif;
+  line-height: 3.5rem;
+  color: $GoldColor;
+  border-bottom: 1px solid $GoldColor;
+  padding-bottom: 2rem;
+  margin: 0 auto 4rem;
+  max-width: 750px;
+  text-align: center;
+}
+
+.Contact.FlexContainer {
+  margin-bottom: 4rem;
+
+  .row {
+    justify-content: center;
+  }
+
+  .column {
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+
+  .column:first-of-type {
+    flex-basis: 20%;
+    max-width: 20%;
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  address {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .Contact.FlexContainer {
+    .column,
+    .column:first-of-type {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    form {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}

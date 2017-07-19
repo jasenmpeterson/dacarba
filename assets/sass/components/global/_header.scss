@@ -1,0 +1,71 @@
+header {
+  .FlexContainer {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .BusinessPhone,
+  a {
+    letter-spacing: $LetterSpacing;
+  }
+
+  .column.SiteLogo {
+    flex-basis: auto;
+
+    a {
+      display: inline-block;
+      width: 250px;
+      height: 64px;
+      max-width: 100%;
+
+      &:hover {
+        .cls-1 {
+          fill: $DarkGrayColor;
+        }
+
+        .cls-2 {
+          fill: $GoldColor;
+        }
+      }
+    }
+
+    svg {
+      display: block;
+      height: auto;
+      width: 250px;
+      max-width: 100%;
+
+      path {
+        transition: $HoverTransition;
+      }
+    }
+
+    .cls-1 {
+      fill: #B78C2D;
+    }
+
+    .cls-2 {
+      fill: #2E2A25;
+    }
+  }
+
+  .Navigation.column {
+    align-self: flex-end;
+    margin-left: auto;
+    flex-basis: auto;
+  }
+
+  .SocialMediaIcons {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  header,
+  header .column.SiteLogo a {
+    height: auto;
+  }
+
+  header .row {
+    align-items: flex-end;
+  }
+}

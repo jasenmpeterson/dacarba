@@ -1,0 +1,33 @@
+.PageBanner.insights {
+  height: 605px;
+}
+
+.FlexContainer.insights {
+  margin-top: 3rem;
+
+  .column.Image {
+    background: url("http://macbook.local:5757/wp-content/uploads/2017/05/pexels-photo.jpg");
+    background-size: cover !important;
+    height: 15rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .PageBanner.insights {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  a.BoxLink {
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .PageBanner.insights {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .PageBanner.insights {
+    height: 400px;
+  }
+}

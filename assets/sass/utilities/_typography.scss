@@ -1,0 +1,36 @@
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: $DarkGrayColor;
+}
+// links :
+
+a {
+  color: $DarkGrayColor;
+
+  &:hover {
+    color: $GoldColor;
+  }
+  transition: $HoverTransition;
+  text-decoration: none;
+}
+// paragraphs :
+
+p {
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+// headers :
+
+h1 {
+  margin-bottom: 1.563rem;
+}
+
+ul {
+  margin-bottom: 0.75rem;
+}

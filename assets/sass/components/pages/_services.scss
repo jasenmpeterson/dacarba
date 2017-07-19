@@ -1,0 +1,15 @@
+.AlternateDescriptionModules.FlexContainer.services {
+  margin-top: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .AlternateDescriptionModules.FlexContainer.services .column {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0 0 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .AlternateDescriptionModules.FlexContainer.services .Icon svg {
+    width: 6rem;
+  }
+}

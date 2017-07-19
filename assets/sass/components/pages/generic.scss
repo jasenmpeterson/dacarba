@@ -1,0 +1,128 @@
+$GoldColor: #B78C2D;
+$DarkGrayColor: #2E2E2E;
+$GrayColor: #8E8E8E;
+$LightGray: #95989A;
+$LightGrayBG: #E8E8E8;
+$LightGold: #C3AD7E;
+$Yellow: #FDD600;
+
+.GenericPage {
+  p a {
+    color: $GoldColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    color: #B78C2D;
+    font-weight: 600;
+  }
+}
+
+.PageBannerAlternate.Generic {
+  height: 350px;
+
+  &:after {
+    display: none;
+  }
+}
+
+.FlexContainer.GenericPage {
+  ol,
+  ul {
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+
+    ul {
+      margin-top: 1.5rem;
+
+      li {
+        font-weight: 400;
+      }
+    }
+  }
+
+  ol {
+    list-style-type: decimal;
+
+    li {
+      font-weight: 600;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+  padding: 4rem 0;
+
+  h1 {
+    color: $GoldColor;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+
+  span.PageAuthor,
+  span.PostDate {
+    display: block;
+    color: $LightGray;
+  }
+
+  span.PostDate {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  span.PageAuthor {
+    margin-bottom: 3rem;
+    font-size: 0.8rem;
+  }
+
+  h3 {
+    color: $GoldColor;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 1.2rem 0;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 768px) {
+  .FlexContainer.GenericPage h3 {
+    font-size: 1rem;
+  }
+
+  .FlexContainer.GenericPage ol,
+  .FlexContainer.GenericPage ul {
+    padding-left: 1.5rem;
+  }
+
+  .FlexContainer.GenericPage h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .FlexContainer.GenericPage {
+    padding: 2rem 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .FlexContainer.GenericPage h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .FlexContainer.GenericPage h3 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin: 0.5rem 0;
+  }
+}

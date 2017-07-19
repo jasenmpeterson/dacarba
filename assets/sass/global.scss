@@ -1,0 +1,58 @@
+$GoldColor: #B78C2D;
+$DarkGrayColor: #2E2E2E;
+$GrayColor: #8E8E8E;
+$LightGray: #95989A;
+$LightGrayBG: #E8E8E8;
+$LightGold: #C3AD7E;
+$Yellow: #FDD600;
+$LetterSpacing: normal;
+$SectionPadding: 2.5rem 0;
+$HoverTransition: all 300ms ease-out;
+@import 'utilities/reset';
+@import 'utilities/flex';
+@import 'utilities/typography';
+@import 'utilities/animations';
+@import 'utilities/box-shadow';
+@import 'utilities/buttons';
+@import 'utilities/images';
+@import 'components/global/hr';
+@import 'components/global/navigation';
+@import 'components/global/header';
+@import 'components/global/footer';
+@import 'components/global/pageBanner';
+@import 'components/global/socialMediaIcons';
+@import 'components/global/animations';
+@import 'components/global/pagePortal';
+@import 'components/global/sectionLabel';
+@import 'components/global/descriptionModules';
+@import 'components/global/stylizedList';
+@import 'components/global/form';
+@import 'components/global/constantcontact';
+@import 'components/pages/home';
+@import 'components/pages/about';
+@import 'components/pages/clients';
+@import 'components/pages/services';
+@import 'components/post/services';
+@import 'components/pages/insights';
+@import 'components/pages/generic';
+@import 'components/pages/contact';
+@import 'components/post/insights';
+
+body {
+  padding: 1.875rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.container {
+  max-width: 700px;
+}
+@media screen and (max-width: 425px) {
+  body {
+    padding: 0.8rem;
+  }
+}
+
+span.PageAuthor,
+span.PostAuthor {
+  display: none !important;
+}

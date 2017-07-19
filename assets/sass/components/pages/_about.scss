@@ -1,0 +1,196 @@
+.PageBanner.about {
+  height: 350px;
+
+  h1 {
+    color: #fff;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+}
+
+.about.InteriorPageWrap {
+  .SectionLabel ~ p {
+    max-width: 40rem;
+    box-sizing: border-box;
+    padding: 1rem 2rem 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .SectionLabel {
+    margin-bottom: 2rem;
+  }
+
+  .column a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: all ease-in-out 1s;
+    padding-bottom: 0.5rem;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  .row.FirstContentBlock {
+    justify-content: center;
+    padding: 3.5rem 0;
+
+    .column {
+      align-self: center;
+    }
+
+    .column:first-of-type:after {
+      display: block;
+      content: '';
+      width: 70%;
+      margin: 3rem 0;
+      height: 1px;
+      background-color: $GoldColor;
+    }
+
+    svg {
+      width: 20rem;
+      height: auto;
+      display: block;
+      padding-left: 2rem;
+    }
+  }
+
+  .row.SecondContentBlock {
+    padding-top: 3.5rem;
+
+    .column {
+      align-self: flex-end;
+    }
+
+    .column:first-of-type {
+      flex-basis: 40%;
+      max-width: 40%;
+    }
+
+    .column:last-of-type {
+      flex-basis: 60%;
+      max-width: 60%;
+      background-color: $LightGrayBG;
+      padding: 10rem;
+    }
+
+    .column p:first-child {
+      position: relative;
+      @include horizontal-rule-top();
+    }
+  }
+
+  .row.ThirdContentBlock {
+    margin-top: -4rem;
+    position: relative;
+    z-index: 2;
+
+    .column {
+      align-self: flex-end;
+    }
+
+    .column:last-of-type {
+      flex-basis: 40%;
+      max-width: 40%;
+    }
+
+    .column:first-of-type {
+      flex-basis: 60%;
+      max-width: 60%;
+      background-color: $GoldColor;
+      color: #fff;
+      padding: 10rem;
+    }
+
+    .column p:first-child {
+      position: relative;
+      @include horizontal-rule-top( '#FFFFFF');
+    }
+  }
+
+  .row.FourthContentBlock {
+    margin-bottom: 3.5rem;
+    background-color: $DarkGrayColor;
+    color: #fff;
+
+    .column {
+      padding: 10rem;
+
+      p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+    }
+
+    .column p:first-child {
+      position: relative;
+      @include horizontal-rule-top();
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .about.InteriorPageWrap .row.FourthContentBlock .column,
+  .about.InteriorPageWrap .row.SecondContentBlock .column:last-of-type,
+  .about.InteriorPageWrap .row.ThirdContentBlock .column:first-of-type {
+    padding: 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about.InteriorPageWrap .row.FirstContentBlock .column {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .about.InteriorPageWrap .row.FirstContentBlock svg {
+    width: 15rem;
+    margin: 0 auto;
+  }
+
+  .about.InteriorPageWrap .SectionLabel ~ p,
+  .about.InteriorPageWrap .row.FourthContentBlock .column p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .PageBanner h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about.InteriorPageWrap .row.FirstContentBlock svg {
+    width: 10rem;
+  }
+
+  .about.InteriorPageWrap .row.FirstContentBlock .column,
+  .about.InteriorPageWrap .row.SecondContentBlock .column,
+  .about.InteriorPageWrap .row.ThirdContentBlock .column {
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+
+  .about.InteriorPageWrap .row.FourthContentBlock .column,
+  .about.InteriorPageWrap .row.SecondContentBlock .column:last-of-type,
+  .about.InteriorPageWrap .row.ThirdContentBlock .column:first-of-type {
+    padding: 3rem;
+  }
+
+  .about.InteriorPageWrap .row.ThirdContentBlock {
+    margin: 0;
+  }
+
+  .about.InteriorPageWrap .row.FourthContentBlock .column p:first-child:before,
+  .about.InteriorPageWrap .row.SecondContentBlock .column p:first-child:before,
+  .about.InteriorPageWrap .row.ThirdContentBlock .column p:first-child:before {
+    top: -1.2rem;
+  }
+
+  .PageBanner h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}

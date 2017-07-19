@@ -1,0 +1,29 @@
+.DescriptionModules.clients {
+  margin-top: 4rem;
+}
+
+.PageBanner.clients {
+  height: 850px;
+}
+@media screen and (max-width: 875px) {
+   @media screen and (max-width: 875px){
+    .DescriptionModules.clients {
+      margin-top: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .DescriptionModules.FlexContainer .Content {
+    padding: 4rem;
+  }
+
+  .DescriptionModules.FlexContainer .Content p:first-of-type:before,
+  .DescriptionModules.FlexContainer .row:nth-of-type(even) .Content p:first-of-type:before {
+    top: -1.2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .DescriptionModules.FlexContainer .Content {
+    padding: 2.5rem 2rem;
+  }
+}

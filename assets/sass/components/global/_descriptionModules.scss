@@ -1,0 +1,230 @@
+.DescriptionModules.FlexContainer {
+  padding: 0 4rem;
+
+  .SectionLabel {
+    margin-top: 3rem;
+    margin-left: -3rem;
+
+    &:before {
+      content: '';
+      display: block;
+      background: #fff;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      margin-top: -.5rem;
+      margin-left: -1rem;
+    }
+  }
+
+  .row {
+    margin-bottom: 3rem;
+
+    &:last-of-type {
+      margin-bottom: 5rem;
+    }
+
+    &:nth-of-type(even) {
+      .Content {
+        background-color: $DarkGrayColor;
+
+        p:first-of-type {
+          @include horizontal-rule-top();
+        }
+      }
+    }
+  }
+
+  .BackgroundImage {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+
+  .Content {
+    flex-basis: 60%;
+    max-width: 60%;
+    background-color: $GoldColor;
+    padding: 6rem;
+    color: #fff;
+
+    p {
+      position: relative;
+
+      &:first-of-type {
+        @include horizontal-rule-top( '#FFFFFF');
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.AlternateDescriptionModules.FlexContainer {
+  padding: 0 4rem;
+
+  span.PostAuthor,
+  span.PostDate {
+    display: block;
+    font-size: 0.8rem;
+  }
+
+  span.PostDate {
+    margin-bottom: 1rem;
+    color: $GoldColor;
+  }
+
+  span.PostAuthor {
+    color: #fff;
+  }
+
+  & > .row {
+    justify-content: center;
+  }
+
+  .Icon,
+  .SectionLabel {
+    align-self: flex-end;
+  }
+
+  .SectionLabel {
+    display: block;
+    text-align: center;
+  }
+
+  .Icon {
+    svg {
+      width: 8rem;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .column {
+    flex-basis: 40%;
+    max-width: 40%;
+    padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
+
+    &:nth-of-type(even) {
+      padding-right: 0;
+    }
+
+    .box {
+      background-color: $LightGrayBG;
+      height: 350px;
+
+      .row {
+        height: 100%;
+
+        &:before {
+          content: '';
+          background-color: #F5F5F5;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          display: block;
+          z-index: -1;
+          top: 1rem;
+          right: -1rem;
+        }
+      }
+
+      .column {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+  }
+  margin-bottom: 3rem;
+}
+
+.AlternateDescriptionModules.FlexContainer,
+.DescriptionModules.FlexContainer .BoxLink {
+  a {
+    display: block;
+    height: 100%;
+    background-color: $DarkGrayColor;
+  }
+}
+
+.AlternateDescriptionModules.FlexContainer.insights {
+  .SectionLabel {
+    .Label {
+      padding: 3rem 1.5rem;
+      background-color: $DarkGrayColor;
+
+      &:after {
+        display: none;
+      }
+    }
+    text-align: left;
+
+    h1 {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .column .box {
+    height: auto;
+
+    .row:before {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .AlternateDescriptionModules.FlexContainer.insights .column {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .DescriptionModules.FlexContainer .BackgroundImage,
+  .DescriptionModules.FlexContainer .Content {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .DescriptionModules.FlexContainer .BackgroundImage {
+    height: 20rem;
+    background-position: center center !important;
+  }
+
+  .DescriptionModules.FlexContainer {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .AlternateDescriptionModules.FlexContainer.insights .column {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .AlternateDescriptionModules.FlexContainer,
+  .DescriptionModules.FlexContainer .BoxLink {
+    a {
+      margin-bottom: 2rem;
+      background-color: transparent;
+    }
+  }
+
+  .AlternateDescriptionModules.FlexContainer.insights {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .DescriptionModules.FlexContainer {
+    padding: 0;
+  }
+
+  .DescriptionModules.FlexContainer .SectionLabel {
+    margin-left: 0;
+  }
+}

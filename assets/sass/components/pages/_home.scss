@@ -1,0 +1,22 @@
+.PageBanner.home {
+  .ScrollDownButton {
+    display: block;
+  }
+}
+
+.BannerSubContent.home {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTgxNCAxMDA0LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE4MTQgMTAwNC40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzJFMkUyRTt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMC41LDIwMC44TDE4MTMuNSwwdjEwMDQuNEw4MTUuOCw4OTMuOUwwLjUsODE5LjVWMjAwLjh6Ii8+PC9zdmc+") no-repeat center top;
+  background-size: cover;
+  margin-top: -206px;
+  height: 765px;
+  width: 100.2%;
+  margin-left: 1px;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 1600px) and (min-width: 1024px) {
+  .BannerSubContent.home {
+    margin-top: -208px;
+    height: 853px;
+  }
+}

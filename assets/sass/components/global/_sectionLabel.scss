@@ -1,0 +1,28 @@
+.SectionLabel {
+  position: relative;
+  display: inline-block;
+
+  .Label {
+    position: relative;
+    z-index: 2;
+    background-color: $LightGold;
+    padding: 1rem 1.5rem;
+    line-height: 1.2rem;
+    @include horizontal-rule-bottom();
+  }
+
+  .OffSetBackground {
+    background-color: $DarkGrayColor;
+    position: absolute;
+    top: 0.5rem;
+    right: -.5rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .SectionLabel .Label {
+    font-size: 0.8rem;
+  }
+}

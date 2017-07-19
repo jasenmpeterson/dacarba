@@ -1,0 +1,54 @@
+.ctct-disclosure sub {
+  color: $LightGray;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  display: inline-block;
+  text-align: center;
+  margin-top: 1.5rem;
+  display: none !important;
+}
+
+.ctct-form-wrapper .ctct-submit {
+  width: 100%;
+}
+
+.ctct-form-field-email input {
+  width: 100%;
+}
+
+.FlexContainer.GenericPage.InsightArticle {
+  .column.ContactContactSubscribe {
+    h1 {
+      color: $GrayColor;
+      text-align: center;
+    }
+  }
+}
+
+.column.ContactContactSubscribe {
+  .box {
+    border-radius: 4px;
+    background-color: #E8E8E8;
+    border: 1px solid rgba(150, 152, 154, .2);
+    padding: 2rem 1.5rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  hr {
+    display: none;
+  }
+
+  input[type="email"] {
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 845px) {
+  .ContactContactSubscribe,
+  .ctct-form {
+    margin-top: 3rem;
+  }
+}

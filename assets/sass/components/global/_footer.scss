@@ -1,0 +1,98 @@
+footer {
+  padding: 1.5rem 2.5rem;
+  background: $DarkGrayColor;
+
+  .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .FooterLogo {
+    a {
+      display: block;
+    }
+
+    svg {
+      width: 200px;
+      height: auto;
+      max-width: 100%;
+
+      path {
+        fill: #b78c2d;
+      }
+    }
+
+    a:hover {
+      svg path {
+        fill: $Yellow;
+      }
+    }
+  }
+
+  a {
+    color: $LightGray;
+  }
+
+  .FooterMenu {
+    li {
+      font-size: 0.875rem;
+      text-align: right;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .FooterSocialMediaIcons {
+    .SocialMediaIcon {
+      svg path {
+        fill: #b78c2d;
+      }
+      display: block;
+      margin-right: 0;
+      margin-bottom: 0.625rem;
+
+      &:hover {
+        svg path {
+          fill: $Yellow;
+        }
+      }
+    }
+  }
+
+  .FooterMenu {
+    padding-right: 3rem;
+
+    ul {
+      li {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .column.SiteLogo {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer {
+    padding: 1rem;
+  }
+
+  .FooterMenu.column,
+  .FooterSocialMediaIcons.column {
+    display: none;
+  }
+}
